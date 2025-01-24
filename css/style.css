@@ -1,0 +1,21 @@
+
+
+@import "busqueda.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+nav div{
+    display: flex;
+    justify-content: end;
+    a{
+        margin: 0 10px 0;
+    }
+}

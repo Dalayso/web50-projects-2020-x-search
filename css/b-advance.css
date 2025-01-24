@@ -1,0 +1,104 @@
+@import "nav.css";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.b-advance{
+    width: 90%;
+    height: auto;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "uno uno dos dos dos tres tres tres tres";
+}
+h3, h4{
+    margin: 10px;
+}
+hr{
+    width: 80%;
+    border: 1px solid black;
+    text-align: justify;
+    margin: 10px 0 10px;
+}
+
+#uno{
+    grid-area: uno;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    label{
+        height: 30px;
+        width: 90%;
+        margin: 10px 5px 10px;
+    }
+}
+#dos{
+    grid-area: dos;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    input{
+        height: 30px;
+        width: 90%;
+        margin: 10px 5px 10px;
+    }
+}
+#tres{
+    grid-area: tres;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    label{
+        height: 30px;
+        width: 90%;
+        margin: 10px 5px 10px;
+    }
+}
+.boton{
+    position: absolute;
+    right: 46%;
+    top: 52%;
+    width: 150px;
+    height: 25px;
+    background-color: rgb(72, 91, 175);
+    color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .b-advance{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "titulos titulos"
+        "uno dos"
+        "uno dos"
+        "tres tres";
+    } 
+}
+@media  (max-width: 767px){
+    .b-advance{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "titulos"
+        "uno"
+        "dos"
+        "tres";
+    }
+}

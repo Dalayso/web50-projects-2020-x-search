@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Search advance</title>
+        <link rel="stylesheet" href="css/b-advance.css">
+    </head>
+    <body>
+        <nav>
+            <Div>
+                <a href="">Google</a>
+                <a href="index.html">Volver</a>
+            </Div>
+        </nav>
+        <form class="b-advance" action="https://www.google.com/search">
+            
+            <div id="uno">
+                <h3 >Mostrar págias que contengan...</h3>
+                <hr>
+            <label for="t-p">Todas estas palabras: </label>
+            <label for="pf-e">Estas palabras o frases exactas: </label>
+            <label for="c-p">Cualquiera de estas palabras: </label>
+            <label for="n-p">Ninguna de estas palabras: </label>
+            </div>
+            <div id="dos" >
+            <input type="text" id="t-p" name="q">
+            <input type="text" id="pf-e" name="q">
+            <input type="text" id="c-p" name="q">
+            <input type="text" id="n-p" name="q">
+            </div>
+            
+            <div id="tres">
+                <h4 >Para hacer esto en el cuadro de búsqueda</h4>
+                <hr>
+                <label for="t-p">
+                    Ingresa las palabras importantes: Terrier ratonero tricolor .
+                </label>
+                <label for="pf-e">
+                    Ingresa las palabras exactas entre comillas: "Terrier ratonero" .
+                </label>
+                <label for="c-p">
+                    Ingresa OR entre las palabras que desees: En miniatura OR estándar .
+                </label>
+                <label for="n-p">
+                Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: -Roedor, -"Jack Russell" .
+                </label>
+            </div>
+            <input class="boton" type="submit" value="busqueda avanzada">
+        </form>
+    </body>
+</html>
